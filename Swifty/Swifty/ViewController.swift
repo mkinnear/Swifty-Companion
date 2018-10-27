@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var token:String?
+    var json:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,8 @@ class ViewController: UIViewController {
             
             self.token = jsonData!["access_token"] as? String
             
+            Globals.token = jsonData!["access_token"] as? String
+            
             print(jsonData ?? "No data")
             print(response as Any)
             
@@ -50,36 +53,25 @@ class ViewController: UIViewController {
     
     
     
+    //we prepare for segue, so when we skip to second view
+    //the data gets updated first
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+//    {
+//        let SecondViewController = segue.destination as! user_page
+//
+//        SecondViewController.myToken = self.token!
+//        SecondViewController.myUsername = self.json!
+//    }
+    
+    @IBOutlet weak var TextField: UITextField!
+    
+    
+    
+    
     @IBAction func fetchData(_ sender: Any) {
-        
-        let url = URL(string: "https://api.intra.42.fr/v2/users/mkinnear")
-        
-        var request = URLRequest(url: url!)
-        
-        let session  = URLSession.shared
-        
-        request.setValue("Bearer \(self.token!)", forHTTPHeaderField: "Authorization")
-        
-        request.httpMethod = "GET"
-        
-        session.dataTask(with: request) { (data, response, err) in
-            
-            let jsonData = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any?]
-            
-//            self.token = jsonData!["access_token"] as? String
-            
-            print(jsonData ?? "No data")
-            print(response as Any)
-            
-//            print (self.token!)
-            }.resume()
+        Globals.username =  TextField.text!
     }
-    
-    
-    
-    
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
