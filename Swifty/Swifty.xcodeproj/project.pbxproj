@@ -7,79 +7,188 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB0241B8217E06D10065B80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0241B7217E06D10065B80D /* AppDelegate.swift */; };
-		BB0241BA217E06D10065B80D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0241B9217E06D10065B80D /* ViewController.swift */; };
-		BB0241BD217E06D10065B80D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0241BB217E06D10065B80D /* Main.storyboard */; };
-		BB0241BF217E06D20065B80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0241BE217E06D20065B80D /* Assets.xcassets */; };
-		BB0241C2217E06D20065B80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0241C0217E06D20065B80D /* LaunchScreen.storyboard */; };
-		BB544729218483B100BD0DC1 /* user-page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB544728218483B100BD0DC1 /* user-page.swift */; };
-		BB54472B2184A12D00BD0DC1 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54472A2184A12D00BD0DC1 /* Globals.swift */; };
+		0706AC12099A9BC1527DB8FD /* Pods_SwiftyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C95B6363DEEBC7904ABA4A /* Pods_SwiftyUITests.framework */; };
+		72E76A92DE82492AABB6C140 /* Pods_SwiftyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCC2CA7405DB7C899D2A2A6 /* Pods_SwiftyTests.framework */; };
+		847B61E1B3C2B361C6EB50AF /* Pods_Swifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228A1BC91B21CCBCA8A59404 /* Pods_Swifty.framework */; };
+		BB002908218611DA00D23AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB002907218611DA00D23AA6 /* AppDelegate.swift */; };
+		BB00290A218611DA00D23AA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB002909218611DA00D23AA6 /* ViewController.swift */; };
+		BB00290D218611DA00D23AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00290B218611DA00D23AA6 /* Main.storyboard */; };
+		BB002910218611DA00D23AA6 /* Swifty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB00290E218611DA00D23AA6 /* Swifty.xcdatamodeld */; };
+		BB002912218611DC00D23AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB002911218611DC00D23AA6 /* Assets.xcassets */; };
+		BB002915218611DC00D23AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB002913218611DC00D23AA6 /* LaunchScreen.storyboard */; };
+		BB002920218611DC00D23AA6 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00291F218611DC00D23AA6 /* SwiftyTests.swift */; };
+		BB00292B218611DC00D23AA6 /* SwiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00292A218611DC00D23AA6 /* SwiftyUITests.swift */; };
+		BB0029392186121C00D23AA6 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0029382186121C00D23AA6 /* SecondView.swift */; };
+		BB00293B2186157E00D23AA6 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00293A2186157E00D23AA6 /* FirstViewModel.swift */; };
+		BB00293D218618CD00D23AA6 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00293C218618CD00D23AA6 /* SecondViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB00291C218611DC00D23AA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0028FC218611DA00D23AA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB002903218611DA00D23AA6;
+			remoteInfo = Swifty;
+		};
+		BB002927218611DC00D23AA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0028FC218611DA00D23AA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB002903218611DA00D23AA6;
+			remoteInfo = Swifty;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		BB0241B4217E06D10065B80D /* Swifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0241B7217E06D10065B80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB0241B9217E06D10065B80D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BB0241BC217E06D10065B80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BB0241BE217E06D20065B80D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BB0241C1217E06D20065B80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BB0241C3217E06D20065B80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB544728218483B100BD0DC1 /* user-page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "user-page.swift"; sourceTree = "<group>"; };
-		BB54472A2184A12D00BD0DC1 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		228A1BC91B21CCBCA8A59404 /* Pods_Swifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2C7006F381B5BDDC5E3AA4 /* Pods-SwiftyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyTests/Pods-SwiftyTests.release.xcconfig"; sourceTree = "<group>"; };
+		3232BB04A7EE7618C403A362 /* Pods-Swifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty/Pods-Swifty.release.xcconfig"; sourceTree = "<group>"; };
+		61C95B6363DEEBC7904ABA4A /* Pods_SwiftyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C92E437A04E099A649E16E /* Pods-SwiftyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyTests/Pods-SwiftyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BCC2CA7405DB7C899D2A2A6 /* Pods_SwiftyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F292D25FE95776B87795AE4 /* Pods-Swifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty/Pods-Swifty.debug.xcconfig"; sourceTree = "<group>"; };
+		AA96CC52067187BC49B0C255 /* Pods-SwiftyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyUITests/Pods-SwiftyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB002904218611DA00D23AA6 /* Swifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB002907218611DA00D23AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB002909218611DA00D23AA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB00290C218611DA00D23AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB00290F218611DA00D23AA6 /* Swifty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swifty.xcdatamodel; sourceTree = "<group>"; };
+		BB002911218611DC00D23AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB002914218611DC00D23AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB002916218611DC00D23AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB00291B218611DC00D23AA6 /* SwiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00291F218611DC00D23AA6 /* SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTests.swift; sourceTree = "<group>"; };
+		BB002921218611DC00D23AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB002926218611DC00D23AA6 /* SwiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00292A218611DC00D23AA6 /* SwiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUITests.swift; sourceTree = "<group>"; };
+		BB00292C218611DC00D23AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0029382186121C00D23AA6 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		BB00293A2186157E00D23AA6 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		BB00293C218618CD00D23AA6 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		E330B2863B67A10C02492C85 /* Pods-SwiftyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyUITests/Pods-SwiftyUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BB0241B1217E06D10065B80D /* Frameworks */ = {
+		BB002901218611DA00D23AA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847B61E1B3C2B361C6EB50AF /* Pods_Swifty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB002918218611DC00D23AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E76A92DE82492AABB6C140 /* Pods_SwiftyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB002923218611DC00D23AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0706AC12099A9BC1527DB8FD /* Pods_SwiftyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB0241AB217E06D10065B80D = {
+		A99FA0C93279DC82811B6624 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BB0241B6217E06D10065B80D /* Swifty */,
-				BB0241B5217E06D10065B80D /* Products */,
+				9F292D25FE95776B87795AE4 /* Pods-Swifty.debug.xcconfig */,
+				3232BB04A7EE7618C403A362 /* Pods-Swifty.release.xcconfig */,
+				77C92E437A04E099A649E16E /* Pods-SwiftyTests.debug.xcconfig */,
+				2D2C7006F381B5BDDC5E3AA4 /* Pods-SwiftyTests.release.xcconfig */,
+				AA96CC52067187BC49B0C255 /* Pods-SwiftyUITests.debug.xcconfig */,
+				E330B2863B67A10C02492C85 /* Pods-SwiftyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB0028FB218611DA00D23AA6 = {
+			isa = PBXGroup;
+			children = (
+				BB002906218611DA00D23AA6 /* Swifty */,
+				BB00291E218611DC00D23AA6 /* SwiftyTests */,
+				BB002929218611DC00D23AA6 /* SwiftyUITests */,
+				BB002905218611DA00D23AA6 /* Products */,
+				A99FA0C93279DC82811B6624 /* Pods */,
+				C9FB5ADFE54079F033106F0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		BB0241B5217E06D10065B80D /* Products */ = {
+		BB002905218611DA00D23AA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB0241B4217E06D10065B80D /* Swifty.app */,
+				BB002904218611DA00D23AA6 /* Swifty.app */,
+				BB00291B218611DC00D23AA6 /* SwiftyTests.xctest */,
+				BB002926218611DC00D23AA6 /* SwiftyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB0241B6217E06D10065B80D /* Swifty */ = {
+		BB002906218611DA00D23AA6 /* Swifty */ = {
 			isa = PBXGroup;
 			children = (
-				BB0241B7217E06D10065B80D /* AppDelegate.swift */,
-				BB0241B9217E06D10065B80D /* ViewController.swift */,
-				BB544728218483B100BD0DC1 /* user-page.swift */,
-				BB54472A2184A12D00BD0DC1 /* Globals.swift */,
-				BB0241BB217E06D10065B80D /* Main.storyboard */,
-				BB0241BE217E06D20065B80D /* Assets.xcassets */,
-				BB0241C0217E06D20065B80D /* LaunchScreen.storyboard */,
-				BB0241C3217E06D20065B80D /* Info.plist */,
+				BB002907218611DA00D23AA6 /* AppDelegate.swift */,
+				BB00293A2186157E00D23AA6 /* FirstViewModel.swift */,
+				BB002909218611DA00D23AA6 /* ViewController.swift */,
+				BB0029382186121C00D23AA6 /* SecondView.swift */,
+				BB00293C218618CD00D23AA6 /* SecondViewModel.swift */,
+				BB00290B218611DA00D23AA6 /* Main.storyboard */,
+				BB002911218611DC00D23AA6 /* Assets.xcassets */,
+				BB002913218611DC00D23AA6 /* LaunchScreen.storyboard */,
+				BB002916218611DC00D23AA6 /* Info.plist */,
+				BB00290E218611DA00D23AA6 /* Swifty.xcdatamodeld */,
 			);
 			path = Swifty;
+			sourceTree = "<group>";
+		};
+		BB00291E218611DC00D23AA6 /* SwiftyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB00291F218611DC00D23AA6 /* SwiftyTests.swift */,
+				BB002921218611DC00D23AA6 /* Info.plist */,
+			);
+			path = SwiftyTests;
+			sourceTree = "<group>";
+		};
+		BB002929218611DC00D23AA6 /* SwiftyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB00292A218611DC00D23AA6 /* SwiftyUITests.swift */,
+				BB00292C218611DC00D23AA6 /* Info.plist */,
+			);
+			path = SwiftyUITests;
+			sourceTree = "<group>";
+		};
+		C9FB5ADFE54079F033106F0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				228A1BC91B21CCBCA8A59404 /* Pods_Swifty.framework */,
+				9BCC2CA7405DB7C899D2A2A6 /* Pods_SwiftyTests.framework */,
+				61C95B6363DEEBC7904ABA4A /* Pods_SwiftyUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB0241B3217E06D10065B80D /* Swifty */ = {
+		BB002903218611DA00D23AA6 /* Swifty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB0241C6217E06D20065B80D /* Build configuration list for PBXNativeTarget "Swifty" */;
+			buildConfigurationList = BB00292F218611DC00D23AA6 /* Build configuration list for PBXNativeTarget "Swifty" */;
 			buildPhases = (
-				BB0241B0217E06D10065B80D /* Sources */,
-				BB0241B1217E06D10065B80D /* Frameworks */,
-				BB0241B2217E06D10065B80D /* Resources */,
+				F1BDA55D790E21AC8FC47A77 /* [CP] Check Pods Manifest.lock */,
+				BB002900218611DA00D23AA6 /* Sources */,
+				BB002901218611DA00D23AA6 /* Frameworks */,
+				BB002902218611DA00D23AA6 /* Resources */,
+				B7B46EDB2BA1A379B7656AD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -87,25 +196,71 @@
 			);
 			name = Swifty;
 			productName = Swifty;
-			productReference = BB0241B4217E06D10065B80D /* Swifty.app */;
+			productReference = BB002904218611DA00D23AA6 /* Swifty.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BB00291A218611DC00D23AA6 /* SwiftyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB002932218611DC00D23AA6 /* Build configuration list for PBXNativeTarget "SwiftyTests" */;
+			buildPhases = (
+				B09810E91E82D49358ECDF10 /* [CP] Check Pods Manifest.lock */,
+				BB002917218611DC00D23AA6 /* Sources */,
+				BB002918218611DC00D23AA6 /* Frameworks */,
+				BB002919218611DC00D23AA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB00291D218611DC00D23AA6 /* PBXTargetDependency */,
+			);
+			name = SwiftyTests;
+			productName = SwiftyTests;
+			productReference = BB00291B218611DC00D23AA6 /* SwiftyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB002925218611DC00D23AA6 /* SwiftyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB002935218611DC00D23AA6 /* Build configuration list for PBXNativeTarget "SwiftyUITests" */;
+			buildPhases = (
+				475593A2570D70776150B455 /* [CP] Check Pods Manifest.lock */,
+				BB002922218611DC00D23AA6 /* Sources */,
+				BB002923218611DC00D23AA6 /* Frameworks */,
+				BB002924218611DC00D23AA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB002928218611DC00D23AA6 /* PBXTargetDependency */,
+			);
+			name = SwiftyUITests;
+			productName = SwiftyUITests;
+			productReference = BB002926218611DC00D23AA6 /* SwiftyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BB0241AC217E06D10065B80D /* Project object */ = {
+		BB0028FC218611DA00D23AA6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Keegan KINNEAR";
 				TargetAttributes = {
-					BB0241B3217E06D10065B80D = {
+					BB002903218611DA00D23AA6 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					BB00291A218611DC00D23AA6 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BB002903218611DA00D23AA6;
+					};
+					BB002925218611DC00D23AA6 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BB002903218611DA00D23AA6;
 					};
 				};
 			};
-			buildConfigurationList = BB0241AF217E06D10065B80D /* Build configuration list for PBXProject "Swifty" */;
+			buildConfigurationList = BB0028FF218611DA00D23AA6 /* Build configuration list for PBXProject "Swifty" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +268,178 @@
 				en,
 				Base,
 			);
-			mainGroup = BB0241AB217E06D10065B80D;
-			productRefGroup = BB0241B5217E06D10065B80D /* Products */;
+			mainGroup = BB0028FB218611DA00D23AA6;
+			productRefGroup = BB002905218611DA00D23AA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB0241B3217E06D10065B80D /* Swifty */,
+				BB002903218611DA00D23AA6 /* Swifty */,
+				BB00291A218611DC00D23AA6 /* SwiftyTests */,
+				BB002925218611DC00D23AA6 /* SwiftyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BB0241B2217E06D10065B80D /* Resources */ = {
+		BB002902218611DA00D23AA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0241C2217E06D20065B80D /* LaunchScreen.storyboard in Resources */,
-				BB0241BF217E06D20065B80D /* Assets.xcassets in Resources */,
-				BB0241BD217E06D10065B80D /* Main.storyboard in Resources */,
+				BB002915218611DC00D23AA6 /* LaunchScreen.storyboard in Resources */,
+				BB002912218611DC00D23AA6 /* Assets.xcassets in Resources */,
+				BB00290D218611DA00D23AA6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB002919218611DC00D23AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB002924218611DC00D23AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		475593A2570D70776150B455 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09810E91E82D49358ECDF10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B46EDB2BA1A379B7656AD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swifty/Pods-Swifty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swifty/Pods-Swifty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BDA55D790E21AC8FC47A77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swifty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		BB0241B0217E06D10065B80D /* Sources */ = {
+		BB002900218611DA00D23AA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB54472B2184A12D00BD0DC1 /* Globals.swift in Sources */,
-				BB0241BA217E06D10065B80D /* ViewController.swift in Sources */,
-				BB544729218483B100BD0DC1 /* user-page.swift in Sources */,
-				BB0241B8217E06D10065B80D /* AppDelegate.swift in Sources */,
+				BB00290A218611DA00D23AA6 /* ViewController.swift in Sources */,
+				BB00293B2186157E00D23AA6 /* FirstViewModel.swift in Sources */,
+				BB002910218611DA00D23AA6 /* Swifty.xcdatamodeld in Sources */,
+				BB0029392186121C00D23AA6 /* SecondView.swift in Sources */,
+				BB00293D218618CD00D23AA6 /* SecondViewModel.swift in Sources */,
+				BB002908218611DA00D23AA6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB002917218611DC00D23AA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB002920218611DC00D23AA6 /* SwiftyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB002922218611DC00D23AA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00292B218611DC00D23AA6 /* SwiftyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BB00291D218611DC00D23AA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB002903218611DA00D23AA6 /* Swifty */;
+			targetProxy = BB00291C218611DC00D23AA6 /* PBXContainerItemProxy */;
+		};
+		BB002928218611DC00D23AA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB002903218611DA00D23AA6 /* Swifty */;
+			targetProxy = BB002927218611DC00D23AA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		BB0241BB217E06D10065B80D /* Main.storyboard */ = {
+		BB00290B218611DA00D23AA6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BB0241BC217E06D10065B80D /* Base */,
+				BB00290C218611DA00D23AA6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BB0241C0217E06D20065B80D /* LaunchScreen.storyboard */ = {
+		BB002913218611DC00D23AA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BB0241C1217E06D20065B80D /* Base */,
+				BB002914218611DC00D23AA6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +447,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BB0241C4217E06D20065B80D /* Debug */ = {
+		BB00292D218611DC00D23AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +507,7 @@
 			};
 			name = Debug;
 		};
-		BB0241C5217E06D20065B80D /* Release */ = {
+		BB00292E218611DC00D23AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,8 +561,9 @@
 			};
 			name = Release;
 		};
-		BB0241C7217E06D20065B80D /* Debug */ = {
+		BB002930218611DC00D23AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F292D25FE95776B87795AE4 /* Pods-Swifty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,15 +572,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Koding-with-Keegan.Swifty";
+				PRODUCT_BUNDLE_IDENTIFIER = Companion.Swifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BB0241C8217E06D20065B80D /* Release */ = {
+		BB002931218611DC00D23AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3232BB04A7EE7618C403A362 /* Pods-Swifty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,35 +590,148 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Koding-with-Keegan.Swifty";
+				PRODUCT_BUNDLE_IDENTIFIER = Companion.Swifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
+		BB002933218611DC00D23AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C92E437A04E099A649E16E /* Pods-SwiftyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Companion.SwiftyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swifty.app/Swifty";
+			};
+			name = Debug;
+		};
+		BB002934218611DC00D23AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2C7006F381B5BDDC5E3AA4 /* Pods-SwiftyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Companion.SwiftyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swifty.app/Swifty";
+			};
+			name = Release;
+		};
+		BB002936218611DC00D23AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA96CC52067187BC49B0C255 /* Pods-SwiftyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Companion.SwiftyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swifty;
+			};
+			name = Debug;
+		};
+		BB002937218611DC00D23AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E330B2863B67A10C02492C85 /* Pods-SwiftyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Companion.SwiftyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swifty;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB0241AF217E06D10065B80D /* Build configuration list for PBXProject "Swifty" */ = {
+		BB0028FF218611DA00D23AA6 /* Build configuration list for PBXProject "Swifty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB0241C4217E06D20065B80D /* Debug */,
-				BB0241C5217E06D20065B80D /* Release */,
+				BB00292D218611DC00D23AA6 /* Debug */,
+				BB00292E218611DC00D23AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB0241C6217E06D20065B80D /* Build configuration list for PBXNativeTarget "Swifty" */ = {
+		BB00292F218611DC00D23AA6 /* Build configuration list for PBXNativeTarget "Swifty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB0241C7217E06D20065B80D /* Debug */,
-				BB0241C8217E06D20065B80D /* Release */,
+				BB002930218611DC00D23AA6 /* Debug */,
+				BB002931218611DC00D23AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB002932218611DC00D23AA6 /* Build configuration list for PBXNativeTarget "SwiftyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB002933218611DC00D23AA6 /* Debug */,
+				BB002934218611DC00D23AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB002935218611DC00D23AA6 /* Build configuration list for PBXNativeTarget "SwiftyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB002936218611DC00D23AA6 /* Debug */,
+				BB002937218611DC00D23AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB00290E218611DA00D23AA6 /* Swifty.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB00290F218611DA00D23AA6 /* Swifty.xcdatamodel */,
+			);
+			currentVersion = BB00290F218611DA00D23AA6 /* Swifty.xcdatamodel */;
+			path = Swifty.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = BB0241AC217E06D10065B80D /* Project object */;
+	rootObject = BB0028FC218611DA00D23AA6 /* Project object */;
 }
