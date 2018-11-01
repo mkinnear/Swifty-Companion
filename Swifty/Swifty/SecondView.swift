@@ -9,7 +9,10 @@
 import UIKit
 import SwiftyJSON
 
-class SecondView: UIViewController {
+class SecondView: UIViewController{
+    
+    
+    
 
     //SecondView Variable Declarations
     
@@ -27,9 +30,8 @@ class SecondView: UIViewController {
     
     @IBOutlet weak var UserCorrectPoints: UILabel!
     
-    
-    @IBOutlet weak var UserLevel: UILabel!
-    
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,33 +73,39 @@ class SecondView: UIViewController {
         
         session.dataTask(with: request) { (data, response, err) in
             
-            let jsonData = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any?]
+            if let jsonData = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any?]
+            {
             
-//            print(jsonData ?? "No data")
-//            print(response as Any)
             
-            //image
-            DisplayModel.image = String((jsonData!["image_url"] as? String)!)
-            
-            //full name
-            DisplayModel.displayname = "Name: " + (jsonData!["displayname"] as? String)!
-            
-            //username
-            DisplayModel.myUsername = "Username: " + (jsonData!["login"] as? String)!
-            
-            //email
-            DisplayModel.email = "Email: " + String((jsonData!["email"] as? String)!)
-            
-            //Correction Points
-             DisplayModel.correctionPoints = (jsonData!["correction_point"]) as! Int
-            
-            //phone number
-//            DisplayModel.phone = String((jsonData!["phone"] as? String)!)
+    //            print(jsonData ?? "No data")
+    //            print(response as Any)
+                
+                //image
+                DisplayModel.image = String((jsonData["image_url"] as? String)!)
+                
+                //full name
+                DisplayModel.displayname = "Name: " + (jsonData["displayname"] as? String)!
+                
+                //username
+                DisplayModel.myUsername = "Username: " + (jsonData["login"] as? String)!
+                
+                //email
+                DisplayModel.email = "Email: " + String((jsonData["email"] as? String)!)
+                
+                //Correction Points
+                DisplayModel.correctionPoints = (jsonData["correction_point"]) as! Int
+                
+                //phone number
+    //            DisplayModel.phone = String((jsonData!["cursus_users"]![0]["level"] as? String)!)
 
             
             
             
-            self.updateInformation()
+                self.updateInformation()
+                }
+                else{
+                     self.createAlert(title: "UNKNOWN", Message: "You Entered an incorrext Username, please eneter a different Username")
+                }
             
             }.resume()
         
@@ -125,6 +133,20 @@ class SecondView: UIViewController {
                 print (" Error: \(err.localizedDescription)")
             }
         }
+    }
+    
+    
+    
+    func createAlert (title:String, Message:String)
+    {
+        let alert = UIAlertController(title: title, message: Message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     /*

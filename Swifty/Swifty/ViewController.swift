@@ -10,7 +10,6 @@ import UIKit
 import SwiftyJSON
 
 class ViewController: UIViewController {
-
     
     // Textfield Declaration..
     
@@ -66,6 +65,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
+
 
