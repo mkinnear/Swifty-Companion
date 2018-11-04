@@ -32,6 +32,7 @@ struct SkillsModel
 {
     static var skills_name:[String] = [String()]
     static var skills_level:[Double] = [Double()]
+    static var new_level: [String] = [String(describing: skills_level)]
 }
 
 struct PersonalModel

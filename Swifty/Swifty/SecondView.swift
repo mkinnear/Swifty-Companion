@@ -13,25 +13,62 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // tableview Declarations...
 
+    @IBOutlet weak var Skills_View: UITableView!
     
     
+    @IBOutlet weak var Projects_View: UITableView!
     
+    @IBOutlet weak var Personal_View: UITableView!
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print ("the array count: \(ProjectModel.projects_name.count)")
         
-        return (ProjectModel.projects_name.count)
+        if tableView == Personal_View
+        {
+            print("\n\n\nPersonals count\(PersonalModel.personals.count)\n\n\n")
+            return (PersonalModel.personals.count)
+        }
+        else if tableView == Skills_View
+        {
+            return (SkillsModel.skills_name.count)
+        }
+        else{
+            return (ProjectModel.projects_name.count)
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel!.text = String(ProjectModel.projects_name[indexPath.row])
-        return (cell)
+        if tableView == Personal_View
+        {
+            let Personals = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "personals")
+            Personals.textLabel!.text = "\(PersonalModel.personals[indexPath.row])"
+            return (Personals)
+        }
+        else if tableView == Skills_View
+        {
+            let Skills = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "skills")
+            Skills.textLabel!.text = "\(SkillsModel.skills_name[indexPath.row]): \(String(describing:SkillsModel.skills_level[indexPath.row]))%"
+            return (Skills)
+        }
+        else
+        {
+            let Projects = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "projects")
+            Projects.textLabel!.text = "\(ProjectModel.projects_name[indexPath.row])"
+            return (Projects)
+        }
+        
     }
     
-    
+    func CallDelegate()
+    {
+        Personal_View.delegate = self
+        Personal_View.dataSource = self
+        Skills_View.delegate = self
+        Skills_View.dataSource = self
+        Projects_View.delegate = self
+        Projects_View.dataSource = self
+    }
     
     
 
@@ -49,9 +86,9 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         _ = SearchModel.username
+//        CallDelegate()
         
     }
 
@@ -210,6 +247,7 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 }
             
                 }.resume()
+            
             
         }
         else {
