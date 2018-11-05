@@ -43,7 +43,7 @@ struct PersonalModel
     static var email : String = String()
     static var correctionPoints : Int = Int()
     
-    static var personals = [myUsername, displayname, email, "\(correctionPoints)"]
+    static var personals : [String] = [String()] // [myUsername, displayname, email, "\(correctionPoints)"]
 //    static var Userlevel : Double = Double()
 
 }

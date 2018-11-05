@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         if let text = self.Search_TextField.text
         {
             SearchModel.username = text
+            SearchModel.username = SearchModel.username.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
             print ("\n\n\nUsername: "+SearchModel.username)
         }
     }

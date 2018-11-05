@@ -23,39 +23,43 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if tableView == Personal_View
-        {
-            print("\n\n\nPersonals count\(PersonalModel.personals.count)\n\n\n")
-            return (PersonalModel.personals.count)
-        }
-        else if tableView == Skills_View
+        
+        if tableView == Skills_View
         {
             return (SkillsModel.skills_name.count)
         }
-        else{
+        else if Projects_View == tableView
+        {
             return (ProjectModel.projects_name.count)
+        }
+        else
+        {
+            print("\n\n\nPersonals count\(PersonalModel.personals.count)\n\n\n")
+            return (PersonalModel.personals.count)
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if tableView == Personal_View
-        {
-            let Personals = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "personals")
-            Personals.textLabel!.text = "\(PersonalModel.personals[indexPath.row])"
-            return (Personals)
-        }
-        else if tableView == Skills_View
+        
+        if tableView == Skills_View
         {
             let Skills = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "skills")
             Skills.textLabel!.text = "\(SkillsModel.skills_name[indexPath.row]): \(String(describing:SkillsModel.skills_level[indexPath.row]))%"
             return (Skills)
         }
-        else
+        else if tableView == Projects_View
         {
             let Projects = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "projects")
             Projects.textLabel!.text = "\(ProjectModel.projects_name[indexPath.row])"
             return (Projects)
+        }
+        else
+        {
+            let Personals = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "personals")
+            print ("\n\n\nPersonals print\(PersonalModel.personals[indexPath.row])\n\n\n")
+            Personals.textLabel!.text = "\(PersonalModel.personals[indexPath.row])"
+            return (Personals)
         }
         
     }
@@ -138,17 +142,15 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 ProjectModel.image = String((jsonData!["image_url"] as? String)!)
               
                     
-                    //full name
-                    PersonalModel.displayname = "Name: " + (jsonData!["displayname"] as? String)!
-                    
-                    //username
-                    PersonalModel.myUsername = "Username: " + (jsonData!["login"] as? String)!
-                    
-                    //email
-                    PersonalModel.email = "Email: " + String((jsonData!["email"] as? String)!)
-                    
+                
+                
+                PersonalModel.personals[0] = "Username: " + (jsonData!["login"] as? String)!
+                PersonalModel.personals.append("Name: " + (jsonData!["displayname"] as? String)!)
+                PersonalModel.personals.append("Email: " + String((jsonData!["email"] as? String)!))
+                
                     //Correction Points
                 PersonalModel.correctionPoints = (jsonData!["correction_point"]) as! Int
+                PersonalModel.personals.append("Correction: " + String(PersonalModel.correctionPoints))
                 
                 
                 /*
@@ -269,7 +271,7 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if let url = URL(string: ProjectModel.image)
         {
-            User_Level.text = "Level: " + String(describing: ProjectModel.userLevel)
+            PersonalModel.personals.append("Level: " + String(describing: ProjectModel.userLevel) + "%")
             do {
                 let data = try Data(contentsOf: url)
                 self.UserImage.image = UIImage(data: data)
